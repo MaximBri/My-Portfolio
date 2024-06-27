@@ -1,0 +1,72 @@
+:root{
+// Дневные
+  --blue: #08f1f5;
+  --green: #08f553;
+  --light-green: #b7f1c9;
+  --black: #07178a;
+  --black-bg: #07178a;
+  --white: #fff;
+  --red: #e64207;
+  --red-bg: #e64207;
+  --orange: #ff8800;
+  --orange-bg: #ff8800;
+  --grey: #f6f1f0;
+  --black-grey:#b5afae;
+  --fiol:#b72ee1;
+// Ночные
+  --blue2: #109799;
+  --green2: #dfeb0b;
+  --light-green2: #3c4175;
+  --black2: #ceced4;
+  --black-bg2: #000000;
+  --white2: #000000;
+  --red2: #df5f30;
+  --red-bg2: #8e4c33;
+  --orange2: #f38405;
+  --orange-bg2: #a45a06;
+  --grey2: #626060;
+  --black-grey2:#d9d3d2;
+  --fiol2:#59166d;
+
+  --image-filter: brightness(1);
+}
+body{
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0%;
+  font-weight: 400;
+  overflow-x: hidden;
+  color: var(--black);
+  background-image: url(/Data/main/bg.png);
+  background-repeat: repeat-y;
+  background-size: 100%;
+}
+html{
+  scroll-behavior: smooth;
+}
+.container{
+  margin-inline: 8vw;
+}
+.hidden{
+  display: none !important;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.wrapper{
+  padding: 20px;
+}
+img {
+  // filter: var(--image-filter);
+}
+@media(max-width: 1024px){
+  .container{
+    margin-inline: 5vw;
+  }
+}
+@media(max-width: 768px){
+  .container{
+    margin-inline: 3vw;
+  }
+}

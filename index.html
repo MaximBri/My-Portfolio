@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="icon" type="image/png" href="./Data/main/Лого светлое.png">
+  <link rel="stylesheet" href="./CSS/reset.css">
+  <link rel="stylesheet" href="./CSS/fonts.css">
+  <link rel="stylesheet" href="./SCSS/style.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+</head>
+<body>
+  <style>
+    body{
+      background-image: url(/Data/main/bg.png);
+    }
+  </style>
+  <header class="header" id="top">
+    <div class="header__error">
+      <h3 class="error-text">Внимание! В настоящее время ведутся технические работы на сайте</h3>
+    </div>
+    <div class="container">
+      <div class="header__nav">
+        <a href="#" class="header__nav-logo">
+          <img src="./Data/main/Лого тёмное.png" alt="" id="logo1">
+        </a>
+        <ul class="header__nav__items">
+          <div class="header__nav__item">
+            <a href="#skills" class="header__nav-item-content">
+              Мои навыки
+            </a>
+            <a href="#portfolio" class="header__nav-item-content">
+              Портфолио
+            </a>
+          </div>
+          <div class="header__nav__links">
+            <a href="https://vk.com/bars38136" class="header__nav-item-link" target="_blank">
+              <img src="./Data/social/vk.png" alt="">
+            </a>
+            <a href="https://t.me/bars38136" class="header__nav-item-link" target="_blank">
+              <img src="./Data/social/telegramm.png" alt="">
+            </a>
+            <a class="header__day" href="#">
+              <img src="./Data/main/day.png" alt="">
+            </a>
+            <a class="header__night hidden" href="#">
+              <img src="./Data/main/night.png" alt="">
+            </a>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="main-wrapper">
+        <h1 class="main__title"></h1>
+        <h2 class="main__subtitle"></h2>
+        <section class="who">
+          <div class="wrapper who__helper">
+            <h2 class="who__title">Кто же такой Frontend-разработчик???</h2>
+            <div class="who__wrapper">
+              <div class="who__left">
+                <h3 class="who__left__title">Если коротко, то этот человек похож на того типа снизу</h3>
+                <video class="main__gif" autoplay loop muted>
+                  <source src="./Data/main/videoplayback (1).mp4" type="video/mp4">
+                  Ваш браузер не поддерживает воспроизведение видео.
+                </video>
+                <h4 class="who__left__subtitle">Но в глобальном смысле фронтенд-разработчик (frontend developer, фронтендер) — это специалист, который создаёт интерфейсы для сайтов и веб-приложений. Он отвечает за то, с чем пользователи взаимодействуют на страницах: текст, изображения, анимации, кнопки, формы, слайдеры, галереи и прочие «красивости». Ещё фронтендер делает так, чтобы сайт одинаково хорошо работал на всех устройствах.</h4>
+              </div>
+            </div>
+          </div>
+          <div class="who__wrapper-bg">
+            <img src="./Data/main/star.png" alt="">
+          </div>
+        </section>
+      </div>
+    </div>
+    <section class="skills" id="skills">
+      <div class="container">
+        <div class="skills-wrapper">
+          <h2 class="skills__title">Чтож, вроде разобрались, перейдём к моим навыкам</h2>
+          <h3 class="skills__subtitle">Вот всё, чем я пользуюсь при разработке сайтов (натяжке и вёрстке)</h3>
+          <div class="skill__container">
+            <span class="skill-slider-nav">
+              <a href="#" class="skill-slider-arrow-space left">
+                <img src="./Data/Skills/arrow-left.png" alt="">
+              </a>
+              <a href="#" class="skill-slider-arrow-space right">
+                <img src="./Data/Skills/arrow-right.png" alt="">
+              </a>
+            </span>
+            <div class="skill__slider">
+              <div class="skill__slide">
+                <div class="skill__slide-about">
+                  <h3 class="skill__slide-name">HTML 5</h3>
+                  <h4 class="skill__slide-categoty">Для вёрстки</h4>
+                </div>
+                <div class="skill__slide-img-container">
+                  <img class="skill__slide-img" src="./Data/Skills/html5.png" alt="">
+                </div>
+                <span class="skill-unique">
+                  <img src="./Data/Skills/enegry.png" alt="">
+                  Изучен недавно
+                </span>
+                <h4 class="skill__slide-descr">Язык гипертекстовой разметки текста. Он нужен, чтобы размещать на веб-странице элементы: текст, картинки, таблицы и видео.</h4>
+              </div>
+              <div class="skill__slide">
+                <div class="skill__slide-about">
+                  <h3 class="skill__slide-name">CSS 3</h3>
+                  <h4 class="skill__slide-categoty">Для вёрстки</h4>
+                </div>
+                <div class="skill__slide-img-container">
+                  <img class="skill__slide-img" src="./Data/Skills/css3.png" alt="">
+                </div>
+                <h4 class="skill__slide-descr">Язык таблиц стилей, который позволяет прикреплять стиль (например, шрифты и цвет) к структурированным документам</h4>
+              </div>
+              <div class="skill__slide">
+                <div class="skill__slide-about">
+                  <h3 class="skill__slide-name">JavaScript</h3>
+                  <h4 class="skill__slide-categoty">Для вёрстки</h4>
+                </div>
+                <div class="skill__slide-img-container">
+                  <img class="skill__slide-img" src="./Data/Skills/js.png" alt="">
+                </div>
+                <h4 class="skill__slide-descr">JavaScript — это язык программирования, который позволяет делать веб-приложения динамичными и интерактивными.</h4>
+              </div>
+              <div class="skill__slide">
+                <div class="skill__slide-about">
+                  <h3 class="skill__slide-name">jQuery</h3>
+                  <h4 class="skill__slide-categoty">Для вёрстки</h4>
+                </div>
+                <div class="skill__slide-img-container">
+                  <img class="skill__slide-img" src="./Data/Skills/jQuery.png" alt="">
+                </div>
+                <h4 class="skill__slide-descr">jQuery — это библиотека для языка программирования JavaScript, набор инструментов для веб-разработки.</h4>
+              </div>
+              <div class="skill__slide">
+                <div class="skill__slide-about">
+                  <h3 class="skill__slide-name">React</h3>
+                  <h4 class="skill__slide-categoty">Для вёрстки</h4>
+                </div>
+                <div class="skill__slide-img-container">
+                  <img class="skill__slide-img" src="./Data/Skills/react.png" alt="">
+                </div>
+                <h4 class="skill__slide-descr">React — это библиотека JavaScript с открытым кодом для создания внешних пользовательских интерфейсов.</h4>
+              </div>
+              <div class="skill__slide">
+                <div class="skill__slide-about">
+                  <h3 class="skill__slide-name">Sass/Scss</h3>
+                  <h4 class="skill__slide-categoty">Для ускорения вёрстки</h4>
+                </div>
+                <div class="skill__slide-img-container">
+                  <img class="skill__slide-img" src="./Data/Skills/scsslogo.png" alt="">
+                </div>
+                <h4 class="skill__slide-descr">Метаязык, который упрощает и ускоряет написание CSS-кода. Sass имеет свой синтаксис, из которого генерирует CSS-код, понятный любому браузеру.</h4>
+              </div>
+              <div class="skill__slide">
+                <div class="skill__slide-about">
+                  <h3 class="skill__slide-name">Git/Github</h3>
+                  <h4 class="skill__slide-categoty">Для сохранений</h4>
+                </div>
+                <div class="skill__slide-img-container">
+                  <img class="skill__slide-img" src="./Data/Skills/git.png" alt="">
+                </div>
+                <h4 class="skill__slide-descr">GitHub — это веб-сайт, на котором можно хранить проекты Git. Git — это средство отслеживания изменений, а GitHub — это место для хранения проектов и совместной работы.</h4>
+              </div>
+              <div class="skill__slide">
+                <div class="skill__slide-about">
+                  <h3 class="skill__slide-name">Figma</h3>
+                  <h4 class="skill__slide-categoty">Для просмотра макета</h4>
+                </div>
+                <div class="skill__slide-img-container">
+                  <img class="skill__slide-img" src="./Data/Skills/figma.png" alt="">
+                </div>
+                <h4 class="skill__slide-descr">С макета, разработанным дизайнером, веб-разработчик берёт все детали сайта (тексты, стили, шрифты, отступы) и воссоздаёт его копию в виде кода, который можно использовать для посадки на CMS (система управления контентом)</h4>
+              </div>
+              <div class="skill__slide">
+                <div class="skill__slide-about">
+                  <h3 class="skill__slide-name">WordPress</h3>
+                  <h4 class="skill__slide-categoty">Система управления контентом</h4>
+                </div>
+                <div class="skill__slide-img-container">
+                  <img class="skill__slide-img" src="./Data/Skills/wordpress.png" alt="">
+                </div>
+                <h4 class="skill__slide-descr">Система управления контентом веб-ресурсов (CMS, Content Management System), которая является одной из самых востребованных по всему миру.</h4>
+              </div>
+              <div class="skill__slide">
+                <div class="skill__slide-about">
+                  <h3 class="skill__slide-name">ACF</h3>
+                  <h4 class="skill__slide-categoty">Плагин для CMS WordPress</h4>
+                </div>
+                <div class="skill__slide-img-container">
+                  <img class="skill__slide-img" src="./Data/Skills/ACF.png" alt="">
+                </div>
+                <h4 class="skill__slide-descr">Позволяет создавать поля в админ-панели сайта, благодаря чему можно поменять тексты или изображения на сайте даже неопытному человеку без помощи веб-разработчика</h4>
+              </div>
+            </div>
+            <div class="skill__dots"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portf" id="portfolio">
+      <div class="container">
+        <div class="portf-wrapper">
+          <h2 class="portf__title">А теперь перейдём к моим работам</h2>
+          <h3 class="portf__subtitle">Итак, вот всё, что я могу вам показать</h3>
+          <div class="portf__box">
+              <div class="portf__box__nav">
+                <button type="button" class="portf__box-filter portf__box-active" data-filter="all">Все</button>
+                <button type="button" class="portf__box-filter" data-filter=".lending">Лендинги</button>
+                <button type="button" class="portf__box-filter" data-filter=".pages">Многостраничники</button>
+                <button type="button" class="portf__box-filter" data-filter=".page">Страницы</button>
+              </div>
+              <ul class="portf__box-mixer">
+                  <a href="#" class="mix portf__box-mixer__item lending" data-order="1">
+                    <h3 class="portf__box-mixer__item-name">Название: <strong>Positivus</strong></h3>
+                    <h3 class="portf__box-mixer__item-cat">Категория: лендинг</h3>
+                    <img src="./Data/Portfolio/positivus.png" alt="">
+                    <h4 class="portf__box-mixer__item-descr"><strong>Особенности:</strong> адаптивность, бургер-меню, 1 аккордеон, 2 слайдера, форма обратной связи</h4>
+                  </a>
+                  <a href="#" class="mix portf__box-mixer__item lending" data-order="2">
+                    <h3 class="portf__box-mixer__item-name">Название: <strong>Takeaway&delivery</strong></h3>
+                    <h3 class="portf__box-mixer__item-cat">Категория: лендинг</h3>
+                    <img src="./Data/Portfolio/Takeaway&delivery.png" alt="">
+                    <h4 class="portf__box-mixer__item-descr"><strong>Особенности:</strong> адаптивность, бургер-меню</h4>
+                  </a>
+                  <a href="#" class="mix portf__box-mixer__item lending" data-order="3">
+                    <h3 class="portf__box-mixer__item-name">Название: <strong>StayHealthy</strong></h3>
+                    <h3 class="portf__box-mixer__item-cat">Категория: лендинг</h3>
+                    <img src="./Data/Portfolio/stayHealthy.png" alt="">
+                    <h4 class="portf__box-mixer__item-descr"><strong>Особенности:</strong> адаптивность, якорные ссылки, 1 слайдер</h4>
+                  </a>
+                  <a href="#" class="mix portf__box-mixer__item pages" data-order="4">
+                    <h3 class="portf__box-mixer__item-name">Название: <strong>Аренда квартир 59</strong></h3>
+                    <h3 class="portf__box-mixer__item-cat">Категория: многостраничник</h3>
+                    <img src="./Data/Portfolio/SaleApartment.png" alt="">
+                    <h4 class="portf__box-mixer__item-descr"><strong>Особенности:</strong> макет взят из реального заказа, адаптивность, якорные ссылки, 2 слайдера, подключена Яндекс-карта, форма обратной связи</h4>
+                  </a>
+                  <a href="#" class="mix portf__box-mixer__item page" data-order="5">
+                    <h3 class="portf__box-mixer__item-name">Название: <strong>Кредитный калькулятор</strong></h3>
+                    <h3 class="portf__box-mixer__item-cat">Категория: страница</h3>
+                    <img src="./Data/Portfolio/calculator.png" alt="">
+                    <h4 class="portf__box-mixer__item-descr"><strong>Особенности:</strong> без адаптивности, возможность настройки под определённые условия</h4>
+                  </a>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="answ">
+      <div class="container">
+        <div class="answ-wrapper">
+          <h2 class="answ__title">Ответы на популярные вопросы</h2>
+          <ul class="answ__box">
+            <li class="answ__box-item">
+              <a href="#" class="answ__box-item-href">
+                <div class="answ__box-item-wrapper">
+                  <h4 class="answ__box-item-title">Что такое вёрстка?</h4>
+                  <img class="answ__box-item-plus" src="./Data/Answers/Plus-icon.png" alt="">
+                </div>
+                <div class="answ__box-item-descr" style="display: none;">
+                  Вёрстка — процесс создания структуры кода по отрисованному макету, как правило используя HTML, CSS, JavaScript, а также прочие инструменты для ускорения процесса. Результатом вёрстки является папка, внутри которой находится запускаемый в браузерах файл с расширением html, а также другие папки с данными, шрифтами, CSS и JavaScript кодом. Человек, делающий эту работу, называется верстальщиком.
+                </div>
+              </a>
+            </li>
+            <li class="answ__box-item">
+              <a href="#" class="answ__box-item-href">
+                <div class="answ__box-item-wrapper">
+                  <h4 class="answ__box-item-title">Что такое адаптивность?</h4>
+                  <img class="answ__box-item-plus" src="./Data/Answers/Plus-icon.png" alt="">
+                </div>
+                <div class="answ__box-item-descr" style="display: none;">
+                  Адаптивность означает, что сайт одинаково хорошо отображается как на компьюторе, так и на телефонах и планшетах. При этом контент сайта может отличаться в зависимости от устройства: на телефонах в шапке сайта достаточно часто реализуют бургер-меню, при нажатии на которое открывается панель с дополнительным контентом или информацией
+                </div>
+              </a>
+            </li>
+            <li class="answ__box-item">
+              <a href="#" class="answ__box-item-href">
+                <div class="answ__box-item-wrapper">
+                  <h4 class="answ__box-item-title">Что такое слайдер?</h4>
+                  <img class="answ__box-item-plus" src="./Data/Answers/Plus-icon.png" alt="">
+                </div>
+                <div class="answ__box-item-descr" style="display: none;">
+                  Слайдер представляет собой набор связанных элементов, которые имеют некоторый контент внутри. При этом пользователю показывается только часть элементов, остальные спрятаны и появляются при определённом действии со стороны пользователя. Пример слайдера реализован в блоке "Мои навыки"
+                </div>
+              </a>
+            </li>
+            <li class="answ__box-item">
+              <a href="#" class="answ__box-item-href">
+                <div class="answ__box-item-wrapper">
+                  <h4 class="answ__box-item-title">Что такое миксер?</h4>
+                  <img class="answ__box-item-plus" src="./Data/Answers/Plus-icon.png" alt="">
+                </div>
+                <div class="answ__box-item-descr" style="display: none;">
+                  Миксер - набор элементов с кнопками, при нажатии на которые показываются некоторые элементы (возможно все). Кнопки служат "фильтрами" для элементов. Пример миксера реализован в блоке "Портфолио"
+                </div>
+              </a>
+            </li>
+            <li class="answ__box-item">
+              <a href="#" class="answ__box-item-href">
+                <div class="answ__box-item-wrapper">
+                  <h4 class="answ__box-item-title">Что такое аккордеон?</h4>
+                  <img class="answ__box-item-plus" src="./Data/Answers/Plus-icon.png" alt="">
+                </div>
+                <div class="answ__box-item-descr" style="display: none;">
+                  Аккордеон - список элементов, каждый из которых содержит скрытый контент, который показывается при клике на определённую кнопку или весь элемент вцелом. Примером аккордеона служит этот блок
+                </div>
+              </a>
+            </li>
+            <li class="answ__box-item">
+              <a href="#" class="answ__box-item-href">
+                <div class="answ__box-item-wrapper">
+                  <h4 class="answ__box-item-title">Что такое лендинг?</h4>
+                  <img class="answ__box-item-plus" src="./Data/Answers/Plus-icon.png" alt="">
+                </div>
+                <div class="answ__box-item-descr" style="display: none;">
+                  Лендинг – это самостоятельный сайт или отдельная страница, призывающий посетителей совершить целевое действие.
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-wrapper">
+        <a href="#top" class="">
+          <img id="logo2" class="footer__nav-logo" src="./Data/main/Лого тёмное.png" alt="">
+        </a>
+        <div class="footer__right">
+          <h3 class="footer__right__title">Есть вопросы или предложения? Пиши мне</h3>
+          <div class="footer__right__links">
+            <a href="https://vk.com/bars38136" class="header__nav-item-link" target="_blank">
+              <img src="./Data/social/vk.png" alt="">
+            </a>
+            <a href="https://t.me/bars38136" class="header__nav-item-link" target="_blank">
+              <img src="./Data/social/telegramm.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./JS/mixitup.min.js"></script>
+  <script src="./JS/main.js"></script>
+</body>
+</html>

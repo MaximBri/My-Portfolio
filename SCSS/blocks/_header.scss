@@ -1,0 +1,134 @@
+.header {
+  background: linear-gradient(to bottom, var(--red-bg), var(--white));
+  background-size: 100% 300%;
+  animation: colorTransition 5s ease infinite;
+  border-bottom: 5px solid var(--black-bg);
+}
+@keyframes colorTransition {
+  0% {
+    background-position: 0% 70%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 70%;
+  }
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.header__nav-logo {
+  img{
+    height: 105px;
+    width: 150px;
+    filter: brightness(1) !important;
+  }
+}
+.header__error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  z-index: 10;
+  background-color: var(--grey);
+  border: 2px solid var(--black-bg);
+}
+.error-text {
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.1;
+}
+.header__nav__items {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 20px;
+}
+.header__nav__item {
+  display: flex;
+  gap: 30px;
+}
+.header__nav-item-content {
+  padding: 15px 35px;
+  background-color: var(--blue);
+  border-radius: 10px;
+  border: 2px solid var(--green);
+}
+.header__nav-item-content:hover{
+  transition: transform 0.3s ease;
+  transform: scale(1.05);
+}
+.header__nav-item-content:not(:hover){
+  transition: transform 0.3s ease;
+  transform: scale(1);
+}
+.header__nav__links, .footer__right__links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  a{
+    width: 40px;
+    height: 40px;
+    img{
+      filter: brightness(1) !important;
+    }
+  }
+}
+.header__nav-item-link {
+}
+.header__day, .header__night{
+  width: 40px;
+  height: 40px;
+  img{
+    width: 100%;
+  }
+}
+@media(max-width: 1024px){
+  .header__nav__items {
+    font-size: 14px;
+  }
+  .header__nav-logo {
+    img{
+      height: 73.5px;
+      width: 105px;
+    }
+  }
+  .header__nav-item-content {
+    padding: 10px 15px;
+  }
+  .error-text {
+    font-size: 25px;
+  }
+}
+@media(max-width: 768px){
+  .header {
+    border-bottom: 3px solid var(--black-bg);
+  }
+  .header__nav__items {
+    font-size: 14px;
+  }
+  .header__nav-item-content {
+    padding: 10px 15px;
+  }
+  .header__nav__items {
+    gap: 15px;
+  }
+  .error-text {
+    font-size: 20px;
+  }
+}
+@media(max-width: 620px){
+  .header__nav__item{
+    display: none;
+  }
+  .header__nav-logo {
+    scale: 0.9;
+  }
+  .error-text {
+    font-size: 16px;
+  }
+}

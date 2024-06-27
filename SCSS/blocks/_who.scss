@@ -1,0 +1,126 @@
+.who {
+  position: relative;
+  width: 100%;
+  padding: 50px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--grey);
+  border-radius: 30px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  border: 2px solid var(--black-bg);
+}
+.who__title {
+  font-size: 40px;
+  line-height: 45px;
+  color: var(--red);
+  margin-bottom: 40px;
+  text-shadow: 1px 1px #adb0b2;
+}
+.who__wrapper {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.who__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-radius: 20px;
+  video{
+    width: 100%;
+  }
+}
+.main__gif{
+  max-width: 600px;
+  border-radius: 20px;
+}
+.who__left__title {
+  z-index: 10;
+  font-size: 30px;
+  line-height: 35px;
+}
+.who__left__subtitle {
+  font-size: 25px;
+  line-height: 30px;
+}
+.who__wrapper-bg{
+  position: absolute;
+  top: 0;
+  right: 0;
+  img{
+    rotate: 30deg;
+    width: 100px;
+    height: 50px;
+  }
+}
+.who__helper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media(max-width: 1024px){
+  .who__title {
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 30px;
+  }
+  .who__left__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .who__left__subtitle {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+@media(max-width: 768px){
+  .who__title {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .who__left__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .who__left__subtitle {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .who__wrapper-bg{
+    img{
+      width: 60px;
+      height: 60px;
+    }
+  }
+  .who {
+    padding: 0;
+    padding-top: 10px;
+  }
+}
+@media(max-width: 478px){
+  .who__title {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .who__left__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .who__left__subtitle {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .who__wrapper-bg{
+    img{
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
